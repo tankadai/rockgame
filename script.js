@@ -17,6 +17,7 @@ const drawgame = () => {
     // console.log("game was draw.");
     msg.innerText = "Game was Draw.";
     msg.style.backgroundColor = "black";
+    document.getElementById("drawAudio").play();
 };
 const showwinner = (userWin, userChoice, compchoice) => {
     if (userWin) {
@@ -25,12 +26,14 @@ const showwinner = (userWin, userChoice, compchoice) => {
         // console.log("You Win");
         msg.innerText = `You Win! Your ${userChoice} beats ${compchoice}`;
         msg.style.backgroundColor = "green";
+        document.getElementById("winAudio").play();
     } else {
         comScore++;
         comScoreg.innerText = comScore;
         // console.log("You Lose");
         msg.innerText = `You Lost. ${compchoice} beats your ${userChoice}`;
         msg.style.backgroundColor = "red";
+        document.getElementById("loseAudio").play();
     }
 }
 const playgame = (userChoice) => {
