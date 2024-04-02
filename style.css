@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+.choice {
+    height: 105px;
+    width: 105px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.choice:hover{
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+#user-score, #com-score {
+    font-size: 4rem;
+}
+.msg-container{
+    margin-top: 5rem;
+}
+.msg{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .choice {
+        height: 80px;
+        width: 80px;
+    }
+    img {
+        height: 75px;
+        width: 75px;
+    }
+    .choices {
+        gap: 2rem;
+    }
+    .score-board {
+        font-size: 1.5rem;
+        gap: 3rem;
+    }
+    #user-score, #com-score {
+        font-size: 3rem;
+    }
+    .msg {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .choice {
+        height: 60px;
+        width: 60px;
+    }
+    img {
+        height: 55px;
+        width: 55px;
+    }
+    .choices {
+        gap: 1rem;
+    }
+    .score-board {
+        font-size: 1.2rem;
+        gap: 2rem;
+    }
+    #user-score, #com-score {
+        font-size: 2.5rem;
+    }
+    .msg {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .choice {
+        height: 50px;
+        width: 50px;
+    }
+    img {
+        height: 45px;
+        width: 45px;
+    }
+    .choices {
+        gap: 0.5rem;
+    }
+    .score-board {
+        font-size: 1rem;
+        gap: 1.5rem;
+    }
+    #user-score, #com-score {
+        font-size: 2rem;
+    }
+    .msg {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .choice {
+        height: 40px;
+        width: 40px;
+    }
+    img {
+        height: 35px;
+        width: 35px;
+    }
+    .choices {
+        gap: 0.3rem;
+    }
+    .score-board {
+        font-size: 0.8rem;
+        gap: 1rem;
+    }
+    #user-score, #com-score {
+        font-size: 1.5rem;
+    }
+    .msg {
+        font-size: 0.8rem;
+    }
+}
